@@ -1,48 +1,86 @@
 # Wine-Quality-Predictor
-Machine Learning Model to Predict Wine Quality Based on Physicochemical Features
-
-# Wine Quality Predictor
-
-This machine learning project predicts the quality of red wine based on various physicochemical features using classification models in Python.
+Machine Learning Model to Predict Wine Quality Based on Physicochemical Features using Classification Models in Python.
 
 ## Dataset
 
-- [Wine Quality Dataset (UCI)](https://archive.ics.uci.edu/ml/datasets/wine+quality)
-- Size: 1,599 samples, 12 features
-- Target: Wine quality (score from 3 to 8)
+Wine Quality Dataset (UCI)
+
+Size: 1,599 samples, 12 features
+
+Target: Wine quality (score from 3 to 8)
 
 ## Technologies Used
 
-- Python
-- Pandas & NumPy
-- scikit-learn (Logistic Regression, Random Forest)
-- Matplotlib & Seaborn
+Python
+
+Pandas & NumPy
+
+scikit-learn (Random Forest, SVM, MLP Classifier)
+
+Matplotlib & Seaborn
 
 ## Workflow
 
-- Data preprocessing (null check, scaling)
-- Feature correlation analysis
-- Model training and evaluation
-- Accuracy, confusion matrix, classification report
+Data preprocessing (null check, scaling, encoding)
+
+Exploratory data analysis (EDA)
+
+Feature correlation analysis
+
+Model training and evaluation
+
+Accuracy scores, confusion matrix, classification report
 
 ## Visualizations
+Feature Correlations
 
-### Feature Correlations
-![Heatmap](assets/feature_correlation.png)
+Visualizing relationships between physicochemical features.
 
-### Confusion Matrix
-![Confusion](assets/confusion_matrix.png)
+Wine Quality Label Distribution
 
-### Accuracy Comparison
-![Accuracy](assets/model_accuracy.png)
+Understanding the distribution of wine quality scores.
 
-## Results
+Confusion Matrices
 
-- **Random Forest Accuracy:** 82%
-- **Logistic Regression Accuracy:** 78%
+Random Forest Classifier
+
+
+
+Decision Tree Classifier
+
+
+
+MLP Classifier
+## Feature Correlations
+
+Visualizing relationships between physicochemical features.
+
+## Label Distribution
+
+Understanding the distribution of wine quality scores.
+
+## Confusion Matrices
+
+Random Forest Classifier
+
+SVM Classifier
+
+MLP Classifier
+
+## Accuracy Comparison
+
+Model comparison by accuracy on test data.
+
+Results:
+
+Random Forest Accuracy: 82%
+
+SVM Classifier Accuracy: 88%
+
+MLP Classifier Accuracy: 88%
 
 ## Author
 
-King Moore Sarpong  
-[@sarpongkm](https://github.com/sarpongkm)
+Kwabena Mensah Sarpong
+@sarpongkm
 
