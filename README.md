@@ -1,86 +1,60 @@
-# Wine-Quality-Predictor
-Machine Learning Model to Predict Wine Quality Based on Physicochemical Features using Classification Models in Python.
+# Wine Quality Prediction
 
-## Dataset
+This project involves building and evaluating classification models to predict wine quality using physicochemical test results. The goal is to analyze patterns, visualize correlations, and implement machine learning models to classify wine into quality categories.
 
-Wine Quality Dataset (UCI)
+## Overview
 
-Size: 1,599 samples, 12 features
+- Dataset: Wine Quality Dataset (UCI Machine Learning Repository)
+- Target Variable: Wine quality score (0–10, binned into categories)
+- Features: Fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, etc.
+- Problem Type: Multi-class classification
+- Models Used:
+  - Random Forest Classifier
+  - Support Vector Machine (SVC)
+  - Multi-Layer Perceptron Classifier (MLPC)
 
-Target: Wine quality (score from 3 to 8)
+## Objectives
 
-## Technologies Used
+- Understand feature relationships using correlation analysis
+- Visualize the distribution of wine quality
+- Train multiple classifiers
+- Compare model performance using confusion matrices and accuracy scores
 
-Python
+## Model Evaluation
 
-Pandas & NumPy
+Model performance was compared using accuracy and confusion matrix visualizations.
 
-scikit-learn (Random Forest, SVM, MLP Classifier)
+### [Model Accuracy Comparison](assets/model_accuracy.png)
 
-Matplotlib & Seaborn
+![Model Accuracy](assets/model_accuracy.png)
 
-## Workflow
+### Confusion Matrices
 
-Data preprocessing (null check, scaling, encoding)
+- [Random Forest Classifier](assets/confusion_matrix_rcf.png)  
+  ![RFC Confusion Matrix](assets/confusion_matrix_rcf.png)
 
-Exploratory data analysis (EDA)
+- [Support Vector Classifier (SVC)](assets/confusion_matrix_clf.png)  
+  ![SVC Confusion Matrix](assets/confusion_matrix_clf.png)
 
-Feature correlation analysis
+- [Multi-Layer Perceptron Classifier (MLPC)](assets/confusion_matrix_mlpc.png)  
+  ![MLPC Confusion Matrix](assets/confusion_matrix_mlpc.png)
 
-Model training and evaluation
+## Exploratory Data Analysis
 
-Accuracy scores, confusion matrix, classification report
+### [Feature Correlation Heatmap](assets/feature_correlation.png)
 
-## Visualizations
-Feature Correlations
+Illustrates relationships between physicochemical properties.  
+![Feature Correlation](assets/feature_correlation.png)
 
-Visualizing relationships between physicochemical features.
+### [Wine Quality Label Distribution](assets/wine_quality_label.png)
 
-Wine Quality Label Distribution
-
-Understanding the distribution of wine quality scores.
-
-Confusion Matrices
-
-Random Forest Classifier
-
-
-
-Decision Tree Classifier
-
-
-
-MLP Classifier
-## Feature Correlations
-
-Visualizing relationships between physicochemical features.
-
-## Label Distribution
-
-Understanding the distribution of wine quality scores.
-
-## Confusion Matrices
-
-Random Forest Classifier
-
-SVM Classifier
-
-MLP Classifier
-
-## Accuracy Comparison
-
-Model comparison by accuracy on test data.
-
-Results:
-
-Random Forest Accuracy: 82%
-
-SVM Classifier Accuracy: 88%
-
-MLP Classifier Accuracy: 88%
+Shows the distribution of wine samples across quality labels.  
+![Label Distribution](assets/wine_quality_label.png)
 
 ## Author
 
-Kwabena Mensah Sarpong
-@sarpongkm
+**Kwabena Mensah Sarpong**  
+GitHub: [sarpongkm](https://github.com/sarpongkm)
+
+---
 
